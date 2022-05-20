@@ -4,7 +4,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 // create the root of the app by selection where the app should be mounted in the dom
 import RelatedOutfitView from './RIOC/RelatedOutfitView.jsx';
-
+//
 const root = createRoot(document.getElementById('root'));
 
 // creates component in js syntax (hence, no <> allowed, js doesn't know what it means)
