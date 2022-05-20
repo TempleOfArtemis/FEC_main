@@ -10,13 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.jsx":
-/*!***********************!*\
-  !*** ./src/index.jsx ***!
-  \***********************/
+/***/ "./client/src/RIOC/OutfitView.jsx":
+/*!****************************************!*\
+  !*** ./client/src/RIOC/OutfitView.jsx ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n// Bring React in to build a component.\n // Import from react-dom the ability to create a root render\n\n // create the root of the app by selection where the app should be mounted in the dom\n\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById(\"root\")); // Here is out base App component.\n// Notice we are NOT using jsx here. This is because we have not set up babel yet.\n// creates component in js syntax (hence, no <> allowed, js doesn't know what it means)\n// root.render(<App />); -> will NOT render!!\n// const App = React.createElement(\"h1\",null,\"Hello World\");\n\nvar App = function App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Hello World\");\n}; // render the root element with the provided component\n\n\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQTtBQUNBOztBQUVBOztBQUVBO0FBR0E7QUFDQTtBQUNBO0FBQ0E7O0FBQ0E7QUFDQTtBQUNBOzs7QUFHQSIsInNvdXJjZXMiOlsid2VicGFjazovL0ZFQ19tYWluLy4vc3JjL2luZGV4LmpzeD9lZDEyIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEJyaW5nIFJlYWN0IGluIHRvIGJ1aWxkIGEgY29tcG9uZW50LlxuaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuLy8gSW1wb3J0IGZyb20gcmVhY3QtZG9tIHRoZSBhYmlsaXR5IHRvIGNyZWF0ZSBhIHJvb3QgcmVuZGVyXG5pbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSBcInJlYWN0LWRvbS9jbGllbnRcIjtcbi8vIGNyZWF0ZSB0aGUgcm9vdCBvZiB0aGUgYXBwIGJ5IHNlbGVjdGlvbiB3aGVyZSB0aGUgYXBwIHNob3VsZCBiZSBtb3VudGVkIGluIHRoZSBkb21cbmNvbnN0IHJvb3QgPSBjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwicm9vdFwiKSk7XG5cbi8vIEhlcmUgaXMgb3V0IGJhc2UgQXBwIGNvbXBvbmVudC5cbi8vIE5vdGljZSB3ZSBhcmUgTk9UIHVzaW5nIGpzeCBoZXJlLiBUaGlzIGlzIGJlY2F1c2Ugd2UgaGF2ZSBub3Qgc2V0IHVwIGJhYmVsIHlldC5cbi8vIGNyZWF0ZXMgY29tcG9uZW50IGluIGpzIHN5bnRheCAoaGVuY2UsIG5vIDw+IGFsbG93ZWQsIGpzIGRvZXNuJ3Qga25vdyB3aGF0IGl0IG1lYW5zKVxuLy8gcm9vdC5yZW5kZXIoPEFwcCAvPik7IC0+IHdpbGwgTk9UIHJlbmRlciEhXG4vLyBjb25zdCBBcHAgPSBSZWFjdC5jcmVhdGVFbGVtZW50KFwiaDFcIixudWxsLFwiSGVsbG8gV29ybGRcIik7XG5jb25zdCBBcHAgPSAoKSA9PiB7XG4gIHJldHVybiA8aDE+SGVsbG8gV29ybGQ8L2gxPlxufVxuXG4vLyByZW5kZXIgdGhlIHJvb3QgZWxlbWVudCB3aXRoIHRoZSBwcm92aWRlZCBjb21wb25lbnRcbnJvb3QucmVuZGVyKDxBcHAgLz4pOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction OutfitView() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"OutfitView Test\"));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OutfitView);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL1JJT0MvT3V0Zml0Vmlldy5qc3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7O0FBRUE7QUFDQTtBQUtBOztBQUVBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vRkVDX21haW4vLi9jbGllbnQvc3JjL1JJT0MvT3V0Zml0Vmlldy5qc3g/ZjcxYiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuXG5mdW5jdGlvbiBPdXRmaXRWaWV3KCkge1xuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8cD5PdXRmaXRWaWV3IFRlc3Q8L3A+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IE91dGZpdFZpZXc7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./client/src/RIOC/OutfitView.jsx\n");
+
+/***/ }),
+
+/***/ "./client/src/RIOC/RelatedOutfitView.jsx":
+/*!***********************************************!*\
+  !*** ./client/src/RIOC/RelatedOutfitView.jsx ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _RelatedView_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RelatedView.jsx */ \"./client/src/RIOC/RelatedView.jsx\");\n/* harmony import */ var _OutfitView_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OutfitView.jsx */ \"./client/src/RIOC/OutfitView.jsx\");\n\n\n\n\nfunction RelatedOutfitView() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_RelatedView_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_OutfitView_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RelatedOutfitView);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL1JJT0MvUmVsYXRlZE91dGZpdFZpZXcuanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFNQTs7QUFFQSIsInNvdXJjZXMiOlsid2VicGFjazovL0ZFQ19tYWluLy4vY2xpZW50L3NyYy9SSU9DL1JlbGF0ZWRPdXRmaXRWaWV3LmpzeD83NzYzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUmVsYXRlZFZpZXcgZnJvbSAnLi9SZWxhdGVkVmlldy5qc3gnO1xuaW1wb3J0IE91dGZpdFZpZXcgZnJvbSAnLi9PdXRmaXRWaWV3LmpzeCc7XG5cbmZ1bmN0aW9uIFJlbGF0ZWRPdXRmaXRWaWV3KCkge1xuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8UmVsYXRlZFZpZXcgLz5cbiAgICAgIDxPdXRmaXRWaWV3IC8+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IFJlbGF0ZWRPdXRmaXRWaWV3O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./client/src/RIOC/RelatedOutfitView.jsx\n");
+
+/***/ }),
+
+/***/ "./client/src/RIOC/RelatedView.jsx":
+/*!*****************************************!*\
+  !*** ./client/src/RIOC/RelatedView.jsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction RelatedView() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"RelatedView Test\"));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RelatedView);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL1JJT0MvUmVsYXRlZFZpZXcuanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUFBOztBQUVBO0FBQ0E7QUFLQTs7QUFFQSIsInNvdXJjZXMiOlsid2VicGFjazovL0ZFQ19tYWluLy4vY2xpZW50L3NyYy9SSU9DL1JlbGF0ZWRWaWV3LmpzeD81OGY2Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbmZ1bmN0aW9uIFJlbGF0ZWRWaWV3KCkge1xuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8cD5SZWxhdGVkVmlldyBUZXN0PC9wPlxuICAgIDwvZGl2PlxuICApO1xufVxuXG5leHBvcnQgZGVmYXVsdCBSZWxhdGVkVmlldztcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./client/src/RIOC/RelatedView.jsx\n");
+
+/***/ }),
+
+/***/ "./client/src/index.jsx":
+/*!******************************!*\
+  !*** ./client/src/index.jsx ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _RIOC_RelatedOutfitView_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RIOC/RelatedOutfitView.jsx */ \"./client/src/RIOC/RelatedOutfitView.jsx\");\n// Bring React in to build a component.\n // Import from react-dom the ability to create a root render\n\n // create the root of the app by selection where the app should be mounted in the dom\n\n\nvar root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById('root')); // creates component in js syntax (hence, no <> allowed, js doesn't know what it means)\n// const App = React.createElement(\"h1\",null,\"Hello World\");\n// root.render(<App />); -> will NOT render!! root.render(App); -> will\n\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_RIOC_RelatedOutfitView_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n} // render the root element with the provided component\n\n\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null));//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jbGllbnQvc3JjL2luZGV4LmpzeC5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFBO0FBQ0E7O0FBRUE7O0FBRUE7QUFFQTtBQUdBO0FBQ0E7O0FBRUE7QUFDQTtBQUtBOzs7QUFHQSIsInNvdXJjZXMiOlsid2VicGFjazovL0ZFQ19tYWluLy4vY2xpZW50L3NyYy9pbmRleC5qc3g/ZDAzMCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBCcmluZyBSZWFjdCBpbiB0byBidWlsZCBhIGNvbXBvbmVudC5cbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG4vLyBJbXBvcnQgZnJvbSByZWFjdC1kb20gdGhlIGFiaWxpdHkgdG8gY3JlYXRlIGEgcm9vdCByZW5kZXJcbmltcG9ydCB7IGNyZWF0ZVJvb3QgfSBmcm9tICdyZWFjdC1kb20vY2xpZW50Jztcbi8vIGNyZWF0ZSB0aGUgcm9vdCBvZiB0aGUgYXBwIGJ5IHNlbGVjdGlvbiB3aGVyZSB0aGUgYXBwIHNob3VsZCBiZSBtb3VudGVkIGluIHRoZSBkb21cbmltcG9ydCBSZWxhdGVkT3V0Zml0VmlldyBmcm9tICcuL1JJT0MvUmVsYXRlZE91dGZpdFZpZXcuanN4JztcblxuY29uc3Qgcm9vdCA9IGNyZWF0ZVJvb3QoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSk7XG5cbi8vIGNyZWF0ZXMgY29tcG9uZW50IGluIGpzIHN5bnRheCAoaGVuY2UsIG5vIDw+IGFsbG93ZWQsIGpzIGRvZXNuJ3Qga25vdyB3aGF0IGl0IG1lYW5zKVxuLy8gY29uc3QgQXBwID0gUmVhY3QuY3JlYXRlRWxlbWVudChcImgxXCIsbnVsbCxcIkhlbGxvIFdvcmxkXCIpO1xuLy8gcm9vdC5yZW5kZXIoPEFwcCAvPik7IC0+IHdpbGwgTk9UIHJlbmRlciEhIHJvb3QucmVuZGVyKEFwcCk7IC0+IHdpbGxcblxuZnVuY3Rpb24gQXBwKCkge1xuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8UmVsYXRlZE91dGZpdFZpZXcgLz5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cblxuLy8gcmVuZGVyIHRoZSByb290IGVsZW1lbnQgd2l0aCB0aGUgcHJvdmlkZWQgY29tcG9uZW50XG5yb290LnJlbmRlcig8QXBwIC8+KTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./client/src/index.jsx\n");
 
 /***/ }),
 
@@ -94,7 +124,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -108,17 +138,17 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/
+/******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/
+/******/ 	
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -131,7 +161,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -143,12 +173,12 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -159,7 +189,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -168,13 +198,13 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /************************************************************************/
-/******/
+/******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.jsx");
-/******/
+/******/ 	var __webpack_exports__ = __webpack_require__("./client/src/index.jsx");
+/******/ 	
 /******/ })()
 ;
