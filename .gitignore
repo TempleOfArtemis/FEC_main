@@ -1,3 +1,9 @@
 node_modules
 .env
 .DS_Store
+ItemOverview/
+/index.jsx
+/bundle.js
+/client/dist/styles/styles-davyd.css.map
+/client/dist/styles/styles-davyd.scss
+/client/dist/styles/styles-davyd.css
