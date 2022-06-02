@@ -273,7 +273,7 @@ function App() {
 
   if (!loading) {
     return (
-      <div className="main">
+      <div className="main" data-testid="resolved">
         <ProductIdContext.Provider value={
           {
             ...data, outfitterListener, triggerOutfitterListener, addToOutfitter, hideCheckoutPopup,
@@ -355,8 +355,8 @@ function App() {
     );
   } else {
     return (
-      <section className="loading">
-        <div className="loading-spinner"> </div>
+      <section data-testid="loading" className="loading">
+        <div className="loading-spinner">Loading...</div>
       </section>
     );
   }

@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import CardDiv from './RIOC-styled-components/CardDiv';
-import '../../dist/styles/styles-val.css';
+// import '../../dist/styles/styles-val.css';
 import { OutfitContext } from './OutfitView';
 import { ProductIdContext } from '../index';
 

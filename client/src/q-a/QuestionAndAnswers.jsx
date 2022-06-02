@@ -92,9 +92,9 @@ function QuestionsAndAnswers() {
 
   if (!loading) {
     return (
-      <section className="question-section">
+      <section className="question-section" data-testid="questionsArrived">
         <div className="title-div">Q & A</div>
-        <div className="search-bar">
+        <div className="search-bar" data-testid="questionSearchBar">
             <i className="fa-solid fa-magnifying-glass" />
           <div data-testid="search-bar">
             <form onSubmit={(e) => e.preventDefault()}>

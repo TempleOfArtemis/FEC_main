@@ -1,4 +1,7 @@
-
+/**
+ * @jest-environment jsdom
+ * @jest-environment-options {"url": "http://localhost:3000"}
+ */
 import React from 'react';
 import axios from 'axios';
 import { render, cleanup, screen, waitForElement, fireEvent, waitFor } from '@testing-library/react';
@@ -26,7 +29,20 @@ describe ('Questions and Answers Component', () => {
     const user = userEvent.setup();
     expect(screen.getByTestId("loading")).toHaveTextContent("Loading...");
     const resolvedDiv = await waitFor(() => screen.getByTestId("resolved"));
+    expect(screen.getByTestId("resolved")).not.toBeEmptyDOMElement();
+    const resolvedQuestions = await waitFor(() => screen.getByTestId("questionsArrived"));
+    // expect(screen.getByTestId("questionsArrived")).not.toBeEmptyDOMElement();
   });
+
+  // it('should render Questions Loading' , async () => {
+  //  render(<QuestionsAndAnswers />);
+  //  const linkElement = screen.getByText(/Questions Loading.../i);
+  //  expect(linkElement).toBeInTheDocument();
+  //  const resolvedQuestions = await waitFor(() => screen.getByTestId("questionsArrived"));
+  //  expect(screen.getByTestId("questionsArrived")).not.toBeEmptyDOMElement();
+  // });
+
+
 })
 
 // describe('App component', () => {
@@ -42,11 +58,6 @@ describe ('Questions and Answers Component', () => {
 //   });
 //  });
 
-//  test('renders Questions Loading' , () => {
-//   render(<QuestionsAndAnswers />);
-//   const linkElement = screen.getByText(/Questions Loading.../i);
-//   expect(linkElement).toBeInTheDocument();
-//  })
 //  test('should check if search component is rendered', () => {
 //    render(<QuestionsAndAnswers />);
 //    const searchBar = screen.getByTestId('search-bar');
