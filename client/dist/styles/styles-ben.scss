@@ -12,6 +12,7 @@
   font-family: 'Montserrat-Bold';
   src: url('../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf');
 }
+$fontSize: 24px;
 
 .outer-review {
   background-color: rgba(255,255,255,0.6);
@@ -23,11 +24,14 @@
   padding-bottom: 15vh;
   resize: horizontal;
   font-family: 'Montserrat';
+  font-size: $fontSize;
 }
+
+
 
 .header-reviews {
   font-weight: bold;
-  font-size: x-large;
+  font-size: 1.1 * $fontSize;
 }
 
 .reviews-section {
@@ -44,19 +48,20 @@
     justify-content: flex-start;
     margin-right: 2vw;
     width: 100%;
+    font-size: .8 * $fontSize;
 
 
     .RatingSummary {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
-      font-size: 40px;
+      font-size: 2 * $fontSize;
       margin-right: 2vw;
 
       .average-star {
         display: flex;
         height: 20px;
-        font-size: 20px;
+        font-size: .8 * $fontSize;
       }
     }
 
@@ -64,6 +69,7 @@
       display: flex;
       align-self: flex-start;
       flex-flow: row wrap;
+      font-size: 0.65 * $fontSize;
     }
 
   }
@@ -129,22 +135,22 @@
         justify-content: space-between;
 
         .reviewer {
-          font-size: 15px;
+          font-size: 0.65 * $fontSize;
         }
 
         .date {
           align-self: flex-end;
-          font-size: 15px;
+          font-size: 0.65 * $fontSize;
         }
 
         .review-summary {
           align-self: flex-start;
-          font-size: 20px;
+          font-size: .7 * $fontSize;
           border-bottom: 3px solid;
         }
 
         .review-body {
-          font-size: 17px;
+          font-size: 0.3 * $fontSize;
         }
       }
 
@@ -212,13 +218,11 @@
       margin:0;
       padding:0;
       cursor: pointer;
-      font-size: small;
-      font-family: 'Montserrat';
+      font-size: .7 * $fontSize;
     }
     .span-helpful-btn {
       font-size: small;
       font-style: italic;
-      font-family: 'Montserrat';
       // margin-left: 2vw;
     }
 
@@ -236,11 +240,9 @@
       padding: 1.5vh;
       margin: 1vh 0vh 2vh 0vh;
       cursor: pointer;
-      font-weight: bolder;
-      font-size:smaller;
+      font-size: .7 * $fontSize;
       color: white;
       width: fit-content;
-      font-family: 'Montserrat';
       &:hover {
         background-color: crimson;
       }
@@ -250,7 +252,6 @@
       flex-direction: row;
       justify-content: space-evenly;
       width: 100%;
-      font-family: 'Montserrat';
       height: auto;
       margin-top: 1vh;
     }
@@ -269,7 +270,6 @@
       width: fit-content;
       height: auto;
       cursor: pointer;
-      font-family: 'Montserrat';
       margin-left: 10px;
       border-radius: 20px;
       background-color: white;
@@ -291,7 +291,6 @@
       &:hover {
         color: white;
       }
-      font-family: 'Montserrat';
     }
    }
 }

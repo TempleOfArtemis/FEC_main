@@ -20,11 +20,12 @@
   padding-bottom: 15vh;
   resize: horizontal;
   font-family: "Montserrat";
+  font-size: 24px;
 }
 
 .header-reviews {
   font-weight: bold;
-  font-size: x-large;
+  font-size: 26.4px;
 }
 
 .reviews-section {
@@ -41,23 +42,25 @@
   justify-content: flex-start;
   margin-right: 2vw;
   width: 100%;
+  font-size: 19.2px;
 }
 .reviews-section .summary-left .RatingSummary {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  font-size: 40px;
+  font-size: 48px;
   margin-right: 2vw;
 }
 .reviews-section .summary-left .RatingSummary .average-star {
   display: flex;
   height: 20px;
-  font-size: 20px;
+  font-size: 19.2px;
 }
 .reviews-section .summary-left .ratings-breakdown {
   display: flex;
   align-self: flex-start;
   flex-flow: row wrap;
+  font-size: 15.6px;
 }
 .reviews-section .outer-char-breakdown {
   position: relative;
@@ -118,19 +121,19 @@
   justify-content: space-between;
 }
 .reviews-section .review-list-container .review-list .review-card .top-of-review .reviewer {
-  font-size: 15px;
+  font-size: 15.6px;
 }
 .reviews-section .review-list-container .review-list .review-card .top-of-review .date {
   align-self: flex-end;
-  font-size: 15px;
+  font-size: 15.6px;
 }
 .reviews-section .review-list-container .review-list .review-card .top-of-review .review-summary {
   align-self: flex-start;
-  font-size: 20px;
+  font-size: 16.8px;
   border-bottom: 3px solid;
 }
 .reviews-section .review-list-container .review-list .review-card .top-of-review .review-body {
-  font-size: 17px;
+  font-size: 7.2px;
 }
 .reviews-section .review-list-container .image-component {
   display: inline-flex;
@@ -183,13 +186,11 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
-  font-size: small;
-  font-family: "Montserrat";
+  font-size: 16.8px;
 }
 .reviews-section .review-list-container .span-helpful-btn {
   font-size: small;
   font-style: italic;
-  font-family: "Montserrat";
 }
 .reviews-section .review-list-container .closeForm-btn {
   background-color: red;
@@ -205,11 +206,9 @@
   padding: 1.5vh;
   margin: 1vh 0vh 2vh 0vh;
   cursor: pointer;
-  font-weight: bolder;
-  font-size: smaller;
+  font-size: 16.8px;
   color: white;
   width: fit-content;
-  font-family: "Montserrat";
 }
 .reviews-section .review-list-container .text-border-btn:hover {
   background-color: crimson;
@@ -219,7 +218,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  font-family: "Montserrat";
   height: auto;
   margin-top: 1vh;
 }
@@ -236,7 +234,6 @@
   width: fit-content;
   height: auto;
   cursor: pointer;
-  font-family: "Montserrat";
   margin-left: 10px;
   border-radius: 20px;
   background-color: white;
@@ -254,7 +251,6 @@
   font-weight: bolder;
   margin-top: 1.5em;
   color: crimson;
-  font-family: "Montserrat";
 }
 .reviews-section .review-list-container .moreReviews-btn:hover {
   color: white;
