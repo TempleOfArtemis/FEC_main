@@ -1,2 +1,44 @@
 [
+	{
+		"session_id": "d33583d7-fde0-4056-9ed5-23df0187f15a",
+		"outfitter": [
+			{
+				"productId": 37325,
+				"title": "Lela Pants",
+				"category": "Pants",
+				"original_price": "120.00",
+				"sale_price": "44.00",
+				"rating": 3.4375,
+				"imageUrl": "https://images.unsplash.com/photo-1519482816300-1490fdf2c2bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+			},
+			{
+				"productId": 38270,
+				"title": "Fredy 250 Suit",
+				"category": "Suit",
+				"original_price": "462.00",
+				"sale_price": "3.00",
+				"rating": 3.0285714285714285,
+				"imageUrl": "https://images.unsplash.com/photo-1553830591-d8632a99e6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+			},
+			{
+				"productId": 37800,
+				"title": "Judson Skirt",
+				"category": "Skirt",
+				"original_price": "570.00",
+				"sale_price": null,
+				"rating": null,
+				"imageUrl": "https://images.unsplash.com/photo-1503449377594-32dd9ac4467c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+			},
+			{
+				"productId": 37925,
+				"title": "Johann Skirt",
+				"category": "Skirt",
+				"original_price": "746.00",
+				"sale_price": null,
+				"rating": 4,
+				"imageUrl": "https://images.unsplash.com/photo-1530092376999-2431865aa8df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+			}
+		],
+		"cart": {}
+	}
 ]
