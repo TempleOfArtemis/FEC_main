@@ -1,5 +1,11 @@
 {
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
   "testRegex": "((\\.|/*.)(test))\\.js?$",
   "testEnvironment": "jsdom",
-  "testEnvironmentOptions.url": "http://localhost:3000"
+  "testEnvironmentOptions.url": "http://localhost:3000",
+  "collectCoverage": true,
+  "coverageReporters": ["json", "html"]
 }
