@@ -31,16 +31,26 @@ describe ('Questions and Answers Component', () => {
     const resolvedDiv = await waitFor(() => screen.getByTestId("resolved"));
     expect(screen.getByTestId("resolved")).not.toBeEmptyDOMElement();
     const resolvedQuestions = await waitFor(() => screen.getByTestId("questionsArrived"));
-    // expect(screen.getByTestId("questionsArrived")).not.toBeEmptyDOMElement();
+     expect(screen.getByTestId("questionsArrived")).not.toBeEmptyDOMElement();
+     expect(screen.getByTestId("questions-title")).not.toBeEmptyDOMElement();
+     expect(screen.getByTestId("search-bar")).not.toBeEmptyDOMElement();
   });
 
-  // it('should render Questions Loading' , async () => {
-  //  render(<QuestionsAndAnswers />);
-  //  const linkElement = screen.getByText(/Questions Loading.../i);
-  //  expect(linkElement).toBeInTheDocument();
-  //  const resolvedQuestions = await waitFor(() => screen.getByTestId("questionsArrived"));
-  //  expect(screen.getByTestId("questionsArrived")).not.toBeEmptyDOMElement();
-  // });
+  it('calls handleChange function when search input changes' , async () => {
+    render(<App />);
+    const user = userEvent.setup();
+    expect(screen.getByTestId("loading")).toHaveTextContent("Loading...");
+    const resolvedDiv = await waitFor(() => screen.getByTestId("resolved"));
+    expect(screen.getByTestId("resolved")).not.toBeEmptyDOMElement();
+    await new Promise((r) => setTimeout(r, 4500));
+    // const resolvedQuestions = await waitFor(() => screen.getByTestId("questionsArrived"));
+    // await new Promise((r) => setTimeout(r, 3500));
+    // const handleChange = jest.fn();
+    // const input = screen.getByTestId('text-input');
+    // fireEvent.change(input, { target: { value: 'search...'}} );
+    // expect(handleChange).toHaveBeenCalledTimes(1);
+  })
+
 
 
 })
