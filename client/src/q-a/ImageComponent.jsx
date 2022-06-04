@@ -5,20 +5,22 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
-import { Modal , FormContainer} from './q&a-styled-components/q&aSectionContainerStyle';
+
 export default class ImageComponent extends React.Component {
+  // image component class is to control the answer images on the Q-A widget
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
     this.handleShowDialog = this.handleShowDialog.bind(this);
   }
 
+  // if the image is clicked upon , sets the isOpen state to true
   handleShowDialog = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
   render() {
-    // console.log(this.props);
+    // conditionally renders a largened image if the state is set to true
     return (
       <div className="image-component">
         <img
@@ -35,12 +37,12 @@ export default class ImageComponent extends React.Component {
           >
             <div className="modal-div">
               <div className="container-div">
-              <img
-              className="image"
-              src={this.props.photo.url}
-              onClick={this.handleShowDialog}
-              alt="no image"
-            />
+                <img
+                  className="image"
+                  src={this.props.photo.url}
+                  onClick={this.handleShowDialog}
+                  alt="no image"
+                />
               </div>
             </div>
           </dialog>

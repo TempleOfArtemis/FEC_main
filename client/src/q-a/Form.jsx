@@ -4,13 +4,13 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { FormStyle } from './q&a-styled-components/q&aSectionContainerStyle';
 
-export default function Form({ questionId ,productName, handleExit }) {
+export default function Form({ questionId, productName, handleExit }) {
   const [body, setBody] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [photoList, setPhotos] = useState('');
   const [isClicked, setIsClicked] = useState(false);
-
+  // onSubmit to invoke a post request to the API. submits an answer
   const onSubmit = (event) => {
     const photos = photoList.toString().split(',');
 
@@ -29,16 +29,24 @@ export default function Form({ questionId ,productName, handleExit }) {
       <div className="answer-header">
         <div>
           <button type="button" onClick={handleExit} className="closeQuestion-btn">
-          <i className="fa-solid fa-xmark cart-modal-close"></i>
+            <i className="fa-solid fa-xmark cart-modal-close" />
           </button>
         </div>
         &nbsp; &nbsp;
         <h1> Submit Your Answer</h1>
         &nbsp; &nbsp;
         <h3>
-          [ {productName.toUpperCase()} ] :
+          [
           {' '}
-        [ {questionId.question_body} ]
+          {productName.toUpperCase()}
+          {' '}
+          ] :
+          {' '}
+          [
+          {' '}
+          {questionId.question_body}
+          {' '}
+          ]
         </h3>
       </div>
       <div className="whole-answer-text">

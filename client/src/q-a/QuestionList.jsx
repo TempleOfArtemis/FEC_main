@@ -29,6 +29,7 @@ function QuestionList(props) {
   const [addAnswer, setAddAnswer] = useState(false);
 
   useEffect(() => {
+    // with each questionID change , sends a get request
     axios
       .get(`/answers/${props.question.question_id}`)
       .then((result) => {
@@ -38,7 +39,11 @@ function QuestionList(props) {
             return acc;
           }, []);
           setAnswerArr(newAnswerArray);
+          // same loading toggle functionality as seen in questionAndAnswers component
           toogleLoading(false);
+          // state hooks to determine if an answer or question has been marked helpful || reported
+          // idea is to conditionally render a message to the user,
+          // if helpful or report is clicked upon
           setAnswer1Helpful(false);
           setAnswer2Helpful(false);
           setQuestionHelpful(false);

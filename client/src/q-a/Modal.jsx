@@ -6,6 +6,8 @@ import { Modal, CloseButton } from './q&a-styled-components/q&aSectionContainerS
 import Form from './Form.jsx';
 
 export default function ModalPopup({ show, handleExit, questionId, productName }) {
+  // ModalPopup function is only created to utilize styled components,
+  // and pass down props to the Form component
   return (
     <Modal show={show}>
       <div>

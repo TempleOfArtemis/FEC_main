@@ -10,6 +10,7 @@ export default function NewQuestion({ productName, handleExit, product_id }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [isClicked, setIsClicked] = useState(false);
+  // form on submit , makes a post request to the server , sending a filled question form
   const onSubmit = (event) => {
     event.preventDefault();
     axios
@@ -18,6 +19,8 @@ export default function NewQuestion({ productName, handleExit, product_id }) {
       })
       .then(() => console.log('post question success'))
       .catch((err) => console.log(err));
+    // if the question is already submitted , this conditional render notifies the user
+    // that the question was submitted.
     setIsClicked(true);
   };
 
@@ -25,17 +28,23 @@ export default function NewQuestion({ productName, handleExit, product_id }) {
     <FormStyle>
       <div className="answer-header">
         <div>
-          <button type="button" onClick={handleExit} className="closeQuestion-btn"><i className="fa-solid fa-xmark cart-modal-close"></i></button>
+          <button type="button" onClick={handleExit} className="closeQuestion-btn"><i className="fa-solid fa-xmark cart-modal-close" /></button>
         </div>
         &nbsp; &nbsp;
         <h1> Ask Your Question</h1>
         &nbsp; &nbsp;
-        <h4>About The [ {productName.toUpperCase()} ]</h4>
+        <h4>
+          About The [
+          {' '}
+          {productName.toUpperCase()}
+          {' '}
+          ]
+        </h4>
       </div>
       <div className="whole-answer-text">
         {isClicked ? <h2>Your Question Has Been Submitted</h2> : (
           <form onSubmit={(e) => onSubmit(e)}>
-            <div className="body-text">
+            <div className="form-group body-text">
               <textarea
                 maxLength="1000"
                 rows="5"
@@ -78,7 +87,7 @@ export default function NewQuestion({ productName, handleExit, product_id }) {
             </div>
             &nbsp; &nbsp;
             <div className="form-group">
-              <button className="text-border-btn" type="submit">
+              <button className="form-control text-border-btn" type="submit">
                 Submit
               </button>
             </div>

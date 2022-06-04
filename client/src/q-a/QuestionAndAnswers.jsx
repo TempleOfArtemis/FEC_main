@@ -1,11 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/extensions */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable react/button-has-type */
-/* eslint-disable max-len */
-/* eslint-disable react/jsx-wrap-multilines */
-/* eslint-disable no-else-return */
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import QuestionList from './QuestionList.jsx';
@@ -33,7 +25,8 @@ function QuestionsAndAnswers() {
   const [sliceCount, setSliceCount] = useState(2);
 
   useEffect(() => {
-    // let's just use 37311 for now
+    // itemID = product ID
+    // with each itemID change , sends a get request to pull the questions matching the product ID
     axios.get(`/questions/${itemId}`).then((questions) => {
       questionsArray = [];
       questions.data.results.forEach((question) => {
@@ -43,12 +36,11 @@ function QuestionsAndAnswers() {
         }
       });
       setQuestionArray([...questionsArray]);
-      // console.log(questionsArray);
+      // loading toggle is set to true after the first initial get request is complete,
+      // until then the page only displays "questions loading"
       toogleLoading(false);
       !questionsArray.length ? setNoQuestions(true) : setNoQuestions(false);
       setQuestionCount(questionsArray.length - 2);
-      // questionCount >= 2 ? setLoadQuestions(true) : setLoadQuestions(false);
-      // setLoadQuestions(false);
       setSliceCount(2);
     })
       .then()
@@ -56,7 +48,9 @@ function QuestionsAndAnswers() {
   }, [itemId]);
 
   useEffect(() => {
-    // searchingArray = [];
+    //  this is useEffect hook is designed purposefully for the search bar
+    // with each search term change after 3 characters,
+    // fills in a searchingArray with the corresponding matches
     if (searchTerm.search.length > 3) {
       searchingArray = questionArray.filter((el) => el.question_body.toLowerCase().includes(searchTerm.search));
       setSearchArray([...searchingArray]);
@@ -68,6 +62,7 @@ function QuestionsAndAnswers() {
   }, [searchTerm.search]);
 
   useEffect(() => {
+    // this useEffect hook is to limit the load questions count
     questionCount >= 2 ? setLoadQuestions(true) : setLoadQuestions(false);
   }, [questionCount]);
 
@@ -81,6 +76,7 @@ function QuestionsAndAnswers() {
   const hideModal = () => {
     setShowModalForm('false');
   };
+  // adjusts question count to be displayed in the page , won't change the state after 8 questions are displayed
   const adjustQuestionCount = () => {
     setQuestionCount((prev) => prev - 2);
     setSliceCount((prev) => {
@@ -95,7 +91,7 @@ function QuestionsAndAnswers() {
       <section className="question-section">
         <div className="title-div">Q & A</div>
         <div className="search-bar">
-            <i className="fa-solid fa-magnifying-glass" />
+          <i className="fa-solid fa-magnifying-glass" />
           <div>
             <form onSubmit={(e) => e.preventDefault()}>
               <input
@@ -109,7 +105,7 @@ function QuestionsAndAnswers() {
             </form>
           </div>
         </div>
-        <div style={{backgroundColor:'white'}}>
+        <div style={{ backgroundColor: 'white' }}>
           {noQuestions ? <span className="noAnswered-text">Looks like no answered questions are available for this product, please add a new question</span> : null}
         </div>
         {searchQuestions ? (
@@ -126,10 +122,10 @@ function QuestionsAndAnswers() {
           </div>
         )}
         <div className="bottom-buttons-div">
-          <div style={{backgroundColor:'white'}}>
+          <div style={{ backgroundColor: 'white' }}>
             {loadQuestions && <button className="text-border-btn" onClick={adjustQuestionCount}>MORE ANSWERED QUESTIONS</button>}
           </div>
-          <div style={{backgroundColor:'white'}}>
+          <div style={{ backgroundColor: 'white' }}>
             <button type="button" className="text-border-btn" onClick={showModal}>
               ADD A QUESTION +
               {' '}
@@ -150,12 +146,11 @@ function QuestionsAndAnswers() {
         </div>
       </section>
     );
-  } else {
-    return (
-      <section>
-        <div> Questions Loading...</div>
-      </section>
-    );
   }
+  return (
+    <section>
+      <div> Questions Loading...</div>
+    </section>
+  );
 }
 export default QuestionsAndAnswers;

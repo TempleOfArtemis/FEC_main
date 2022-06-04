@@ -5,7 +5,11 @@ import React, { useState } from 'react';
 import { Modal, CloseButton } from './q&a-styled-components/q&aSectionContainerStyle';
 import NewQuestion from './NewQuestion.jsx';
 
-export default function QuestionModal({ show, handleExit, name, itemId }) {
+export default function QuestionModal({
+  show, handleExit, name, itemId,
+}) {
+  // QuestionModal function is only created to utilize styled components,
+  // and pass down props to the NewQuestion form component
   return (
     <Modal show={show}>
       <div>
