@@ -14,10 +14,6 @@ const retrieve2Reviews = (productId, page, count, sort) => (
     })
 );
 
-const retrieveMeta = (productId) => {
-  axios.get(`/reviews/${productId}/reviewsMeta`);
-};
-
 const putIsHelpful = (reviewId) => (
   axios.put(`/reviews/${reviewId}/helpful`)
     .catch((err) => {
@@ -36,5 +32,4 @@ module.exports = {
   retrieve2Reviews,
   putIsHelpful,
   putReported,
-  retrieveMeta,
 };

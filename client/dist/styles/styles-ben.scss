@@ -95,9 +95,9 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     width: 100%;
-    padding-top: 2vh;
+    padding-top: 10vh;
     margin-left: 1vw;
     resize: horizontal;
 
@@ -108,7 +108,7 @@
       border-top: 2px solid;
       overflow-y: auto;
       background-color: rgba(255,255,255,0.8);;
-      height: 35vh;
+      max-height: 55vh;
       position: relative;
       border-radius: 10px;
       padding: 2%;
