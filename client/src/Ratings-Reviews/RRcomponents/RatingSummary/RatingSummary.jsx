@@ -8,6 +8,7 @@ export default function RatingSummary({ setRatingFilter }) {
   const data = useContext(ProductIdContext);
   const [productRatings, setRatings] = useState([]);
 
+  // calculates average rating
   useEffect(() => {
     const ratingCounts = Object.entries(data.ratings);
     const averageRating = (Math.round(AverageStarRating(ratingCounts) * 10) / 10).toFixed(1);
