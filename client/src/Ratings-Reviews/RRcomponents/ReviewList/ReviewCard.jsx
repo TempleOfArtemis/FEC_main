@@ -9,13 +9,15 @@ export default function ReviewEntry({ review }) {
   const [reported, setReported] = useState(false);
   const [showAll, setShowAll] = useState(review.body.length < 250);
 
+  // const for when review body is greater than 250 char
   const shortBody = review.body.substring(0, 250);
 
+  // toggles between shortbody and full review body
   function showMore(e) {
     e.preventDefault();
     setShowAll(!showAll)
   }
-
+  // puts helpful on review
   function clickHelpFunction(e) {
     e.preventDefault();
     if (!isHelpful) {
@@ -25,7 +27,7 @@ export default function ReviewEntry({ review }) {
         });
     }
   }
-
+  // puts report on review
   function clickReportFunction(e) {
     e.preventDefault();
     if (!reported) {

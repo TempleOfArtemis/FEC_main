@@ -17,6 +17,7 @@ export default function ReviewList() {
   const [page, setPage] = useState(1);
   const [totalReviews, setTotalReviews] = useState(0);
 
+  // retrieve two reviews from API
   function retrieveReviews() {
     return retrieve2Reviews(itemId, page, count, sort)
       .then((res) => {
@@ -26,11 +27,11 @@ export default function ReviewList() {
         console.log('Error, could not retrieve reviews, retrieve', err);
       });
   }
-
+  // used to calculate total reviews to display
   function add(accumulator, a) {
     return accumulator + Number(a);
   }
-
+  // click handler for fetching more reviews
   function clickMoreReviews() {
     return retrieve2Reviews(itemId, page + 1, count, sort)
       .then((res) => {
@@ -55,12 +56,12 @@ export default function ReviewList() {
   const hideModal = () => {
     setShowModalForm('false');
   };
-
+  // displays total reviews on feature item change
   useEffect(() => {
     const allReviews = Object.values(ratings).reduce(add, 0);
     setTotalReviews(allReviews);
   }, [itemId]);
-
+  // retrieves reviews on feature item change or sort change
   useEffect(() => {
     setPage(1);
     retrieveReviews();

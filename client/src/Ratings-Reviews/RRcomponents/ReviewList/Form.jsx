@@ -28,6 +28,7 @@ export default function Form() {
 
   const [reviewCharacteristics, setCharacteristics] = useState({});
 
+  // sets characteristics for featured item
   useEffect(() => {
     const newChars = {};
     for(let key in characteristics) {
@@ -36,6 +37,7 @@ export default function Form() {
     setCharacteristics(newChars);
   }, [itemId]);
 
+  // converts photo urls into array, then submits
   function submitAxios() {
     if (email !== '') {
       const photos = photoList.toString().split(',');
@@ -51,7 +53,7 @@ export default function Form() {
     }
   }
 
-  // assigns characteristic with unique char id for item
+  // on submit, assigns characteristic with unique char id for item, then submits review
   function submitCharacteristics() {
     const submitObj = {};
     for (let char in reviewCharacteristics) {
@@ -69,6 +71,7 @@ export default function Form() {
     submitAxios();
   }
 
+  // handles recommend checkmark
   const handleCheck = () => {
     setRecommend(!recommend);
   };
