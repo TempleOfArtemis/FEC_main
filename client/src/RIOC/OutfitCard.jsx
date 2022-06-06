@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import axios from 'axios';
 import StarRating from '../shared/StarRating';
-import CardDiv from './RIOC-styled-components/CardDiv';
 import CardButton from './RIOC-styled-components/CardButton';
 import { OutfitContext } from './OutfitView';
 import { ProductIdContext } from '../index';
@@ -16,10 +15,7 @@ function OutfitCard({card}) {
   }
 
   function deleteCard(event) {
-    event.cancelBubble = true;
-    if (event.stopPropagation) {
-      event.stopPropagation();
-    }
+    event.stopPropagation();
     axios.delete('/outfitter', {
       data: {
         productId: card.productId,

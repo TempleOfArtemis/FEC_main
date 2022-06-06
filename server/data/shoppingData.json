@@ -1,2 +1,49 @@
 [
+	{
+		"session_id": "d33583d7-fde0-4056-9ed5-23df0187f15a",
+		"outfitter": [
+			{
+				"productId": 38270,
+				"title": "Fredy 250 Suit",
+				"category": "Suit",
+				"original_price": "462.00",
+				"sale_price": "3.00",
+				"rating": 3.0285714285714285,
+				"imageUrl": "https://images.unsplash.com/photo-1553830591-d8632a99e6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+			},
+			{
+				"productId": 37313,
+				"title": "Morning Joggers",
+				"category": "Pants",
+				"original_price": "40.00",
+				"sale_price": null,
+				"rating": 4.081632653061225,
+				"imageUrl": "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+			},
+			{
+				"productId": 37316,
+				"title": "Pumped Up Kicks",
+				"category": "Kicks",
+				"original_price": "89.00",
+				"sale_price": null,
+				"rating": 4.043010752688172,
+				"imageUrl": "https://images.unsplash.com/photo-1477420143023-6a0e0b04b69a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+			},
+			{
+				"productId": 37315,
+				"title": "Heir Force Ones",
+				"category": "Kicks",
+				"original_price": "99.00",
+				"sale_price": null,
+				"rating": 2.686046511627907,
+				"imageUrl": "https://images.unsplash.com/photo-1544441892-794166f1e3be?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
+			}
+		],
+		"cart": {
+			"Pumped Up Kicks": {
+				"7": 1,
+				"thumbnail": "https://images.unsplash.com/photo-1477420143023-6a0e0b04b69a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+			}
+		}
+	}
 ]

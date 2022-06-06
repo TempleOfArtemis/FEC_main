@@ -1,11 +1,8 @@
-import React, { useState, useContext } from 'react';
-import CardDiv from './RIOC-styled-components/CardDiv';
+import React, { useContext } from 'react';
 import '../../dist/styles/styles-val.css';
-import { OutfitContext } from './OutfitView';
 import { ProductIdContext } from '../index';
 
 function AddToOutfitCard() {
-  const { outfit, setOutfit } = useContext(OutfitContext);
   const { addToOutfitter } = useContext(ProductIdContext);
 
   return (

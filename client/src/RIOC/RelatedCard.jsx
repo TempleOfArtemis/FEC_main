@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
-import CardDiv from './RIOC-styled-components/CardDiv';
+import React, { useState, useContext } from 'react';
 import StarRating from '../shared/StarRating';
 import CardButton from './RIOC-styled-components/CardButton';
 import CompareModal from './CompareModal';
-import '../../dist/styles/styles-val.css';
 import { CardProductContext } from './RelatedView';
 
 export const ModalContext = React.createContext();
@@ -11,8 +9,6 @@ export const ModalContext = React.createContext();
 function RelatedCard({ cardRating }) {
   const { setItemId, product } = useContext(CardProductContext);
   const [modal, setModal] = useState(false);
-  // const productImage = product ? product.results[0].photos[0].thumbnail_url
-  //   : '../../dist/assets/images/placeholder.png';
   const productImage = product.results[0].photos[0].thumbnail_url
     ? product.results[0].photos[0].thumbnail_url
     : '../assets/Images/placeholder.png';
@@ -22,10 +18,7 @@ function RelatedCard({ cardRating }) {
     document.documentElement.scrollTop = 0;
   }
   function modalHandler(event) {
-    event.cancelBubble = true;
-    if (event.stopPropagation) {
-      event.stopPropagation();
-    }
+    event.stopPropagation();
     setModal(!modal);
   }
   return (

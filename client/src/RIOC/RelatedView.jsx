@@ -3,7 +3,6 @@ import axios from 'axios';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 import RelatedCard from './RelatedCard';
-import CardContainer from './RIOC-styled-components/CardContainer';
 import getAverageRating from '../../../server/utils/helpers';
 import { ProductIdContext } from '../index';
 
@@ -74,7 +73,9 @@ function RelatedView() {
     <section className="viewSection">
       <h6 className="sectionTitle">RELATED PRODUCTS</h6>
       <div className="cardContainer">
-        <ViewableContext.Provider value={{ viewable, setViewable, position, setPosition, related, end, setEnd }}>
+        <ViewableContext.Provider value={{
+          viewable, setViewable, position, setPosition, related, end, setEnd
+        }}>
           <LeftArrow />
           {viewable.slice(position, position + 4).map((product, i) => (
             <CardProductContext.Provider key={i} value={{ setItemId, product }}>
