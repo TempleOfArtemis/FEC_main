@@ -4,7 +4,6 @@ import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 import OutfitCard from './OutfitCard';
 import AddToOutfitCard from './AddToOutfit';
-import CardContainer from './RIOC-styled-components/CardContainer';
 import { ProductIdContext } from '../index';
 export const OutfitContext = React.createContext('default');
 

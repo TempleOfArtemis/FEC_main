@@ -4,8 +4,8 @@ import { ViewableContext } from './RelatedView';
 import { OutfitContext } from './OutfitView';
 
 function LeftArrow({outfitAttr}) {
-  const { viewable, setViewable, position, setPosition, related, end, setEnd } = useContext(ViewableContext);
-  const { outfit, oPosition, setOPosition, oEnd, setOEnd } = useContext(OutfitContext);
+  const { position, setPosition, setEnd } = useContext(ViewableContext);
+  const { setOPosition, setOEnd } = useContext(OutfitContext);
 
   function scrollLeft() {
     if (outfitAttr === 'outfit') {
@@ -14,9 +14,6 @@ function LeftArrow({outfitAttr}) {
     } else {
       setPosition((prevPosition) => prevPosition - 1);
       setEnd(false);
-    }
-    if (position === 0) {
-
     }
   }
 

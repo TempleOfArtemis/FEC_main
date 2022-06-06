@@ -21,7 +21,7 @@ function CompareModal() {
   }, []);
 
   function handleSharedTrait(trait, featureList) {
-    let sharedValue = featureList.reduce((prev, cur, i) => {
+    const sharedValue = featureList.reduce((prev, cur) => {
       if (cur.feature === trait.feature) {
         return cur.value;
       }

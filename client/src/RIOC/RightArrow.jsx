@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
-import CarouselButton from './RIOC-styled-components/CarouselButtons';
 import { ViewableContext } from './RelatedView';
 import { OutfitContext } from './OutfitView';
 
@@ -9,7 +8,9 @@ function RightArrow({ outfitAttr }) {
     viewable, setViewable, position, setPosition,
     related, end, setEnd,
   } = useContext(ViewableContext);
-  const { outfit, oPosition, setOPosition, oEnd, setOEnd } = useContext(OutfitContext);
+  const {
+    outfit, oPosition, setOPosition, setOEnd,
+  } = useContext(OutfitContext);
 
   function getNextItem() {
     const nextId = related[position + 3];
